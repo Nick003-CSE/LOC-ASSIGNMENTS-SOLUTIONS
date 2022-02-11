@@ -1,24 +1,28 @@
 //WAP TO ENTER TWO NO. & PERFORM ALL ARITHMETIC OPERATIONS
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
-    int a,b;
-    printf("Enter the numbers here\n");
-    scanf("%d%d",&a,&b);
-    switch(1)
+    float a,b;
+    char operation;
+    printf("Enter the two numbers & the operations:\n");
+    scanf("%f%f%s", &a,&b,&operation);
+    switch (operation)
     {
-        case 1:
-        printf("\nThe add of two nos %d\n",a+b);
+        case ('+'):
+        printf("The addition of the two no.s is %f", a+b);
+        break;
         
-        case 2:
-        printf("\nThe sub of two numbers is %d\n",a-b);
+        case('-'):
+        printf("The subtraction of the two no.s is %f", a-b);   
+        break;
         
-        case 3:
-        printf("\nThe multiply of two nos is %d\n",a*b);
+        case('*'):
+        printf("The Multiplication of the two no.s is %f", a*b);
+        break;
         
-        case 4:
-        printf("\nThe divide of two nos is %d\n",a/b);
-    
+        case('/'):
+        printf("The Division of the two no.s is %f", a/b);
+        break;
     }
-return 0;
+    return 0;
 }
