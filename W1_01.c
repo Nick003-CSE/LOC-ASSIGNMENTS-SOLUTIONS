@@ -1,20 +1,25 @@
-//WAP TO DISPLAY PERSONAL INFORMATION
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
-    char n[10],b[10],h[10];
-    int r;
-    printf("\nEnter your name:\n");
-    scanf("%s",&n);
-    printf("\nEnter your Branch:\n");
-    scanf("%s",&b);
-    printf("\nEnter your hobbies:\n");
-    scanf("%s",&h);
-    printf("\nEnter your roll number:\n");
-    scanf("%d",&r);
-    printf("\nName is %s",n);
-    printf("\nbranch is %s",b);
-    printf("\nroll is %d",r);
-    printf("\nhobbies is %s",h);
-    return 0;
+  char name[40],branch[40],hobbies[40];
+  int roll_number;
+  printf("\nEnter your name\n");
+  gets(name);
+
+   printf("\nEnter your branch\n");
+  gets(branch);
+
+   printf("\nEnter your hobbies\n");
+  gets(hobbies);
+
+   printf("\nEnter your rollno.\n");
+   scanf("%d",&roll_number);
+  
+
+  printf("Name is %s\n",name);
+  printf("Branch is %s\n",branch);
+  printf("Hobbies is %s\n",hobbies);
+  printf("roll is %d\n",roll_number);
+
+  return 0;
 }
